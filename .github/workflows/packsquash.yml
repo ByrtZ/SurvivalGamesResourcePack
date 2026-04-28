@@ -21,25 +21,16 @@ jobs:
           ./gradlew packsquash
       - name: Calculate SHA1
         run: |
-          echo "PACK_SHA1=$(sha1sum build/packsquash/Burb.zip | cut --delimiter " " --fields 1)" >> "$GITHUB_ENV"
+          echo "PACK_SHA1=$(sha1sum build/packsquash/SG.zip | cut --delimiter " " --fields 1)" >> "$GITHUB_ENV"
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Burb.zip
-          path: build/packsquash/Burb.zip
-      - name: Setup MinIO client
-        uses: yakubique/setup-minio-cli@v1
-      - name: Upload to CDN
-        env:
-          CDN_S3_URL: ${{ secrets.CDN_S3_URL }}
-          CDN_S3_ACCESS_KEY: ${{ secrets.CDN_S3_ACCESS_KEY }}
-          CDN_S3_SECRET_KEY: ${{ secrets.CDN_S3_SECRET_KEY }}
-        run: |
-          mc alias set cdn "$CDN_S3_URL" "$CDN_S3_ACCESS_KEY" "$CDN_S3_SECRET_KEY"
-          mc put build/packsquash/Burb.zip cdn/resource-packs/burb/packs/${{ env.PACK_SHA1 }}.zip
-          mc pipe cdn/resource-packs/burb/meta/${{ github.ref_name }}.json << EOF
-          {
-            "packHash": "${{ env.PACK_SHA1 }}",
-            "commitId": "${{ github.sha }}"
-          }
-          EOF
+          name: SG.zip
+          path: build/packsquash/SG.zip
+      - name: Tag and create release
+        if: github.ref == 'refs/heads/master'
+        uses: softprops/action-gh-release@v2
+        with:
+          description: "SHA1: ${{ env.PACK_SHA1 }}"
+          tag_name: master-v${{ github.run_number }}
+          files: build/packsquash/SG.zip

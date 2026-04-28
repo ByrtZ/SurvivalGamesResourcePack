@@ -1,0 +1,52 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "sg:font/healthbar/frame.png",
+      "chars": ["\uE000"],
+      "height": 9,
+      "ascent": 8
+    },
+    {
+      "type": "bitmap",
+      "file": "sg:font/healthbar/fill_end.png",
+      "chars": ["\uE001"],
+      "height": 7,
+      "ascent": 7
+    },
+    {
+      "type": "bitmap",
+      "file": "sg:font/healthbar/fill.png",
+      "chars": ["\uE002"],
+      "height": 7,
+      "ascent": 7
+    },
+    {
+      "type": "bitmap",
+      "file": "sg:font/healthbar/fill_tick_center.png",
+      "chars": ["\uE003"],
+      "height": 7,
+      "ascent": 7
+    },
+    {
+      "type": "bitmap",
+      "file": "sg:font/healthbar/fill_tick_large.png",
+      "chars": ["\uE004"],
+      "height": 7,
+      "ascent": 7
+    },
+    {
+      "type": "bitmap",
+      "file": "sg:font/healthbar/fill_tick_small.png",
+      "chars": ["\uE005"],
+      "height": 7,
+      "ascent": 7
+    },
+    {
+      "type": "space",
+      "advances": {
+        "\uF8FF": -1
+      }
+    }
+  ]
+}

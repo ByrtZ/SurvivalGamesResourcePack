@@ -1,5 +1,5 @@
 pack_directory = 'build/packsquashWork'
-output_file_path = 'build/packsquash/Burb.zip'
+output_file_path = 'build/packsquash/SG.zip'
 
 allow_mods = ['OptiFine']
 

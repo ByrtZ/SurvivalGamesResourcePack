@@ -3,7 +3,7 @@ plugins {
 }
 
 tinsel.fonts {
-    create("burb:font") {
+    create("sg:font") {
         offsets = setOf(8, 0, -2, -12)
         addedBitmapSpacing = 12
     }
@@ -24,7 +24,7 @@ tasks.register<Exec>("packsquash") {
     standardOutput = System.`out`
 
     inputs.files(packsquashPrepare)
-    outputs.files(project.layout.buildDirectory.dir("packsquash/Burb.zip"))
+    outputs.files(project.layout.buildDirectory.dir("packsquash/SG.zip"))
     executable = "packsquash"
     args("packsquash.toml")
 }
