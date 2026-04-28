@@ -30,20 +30,6 @@
     },
     {
       "type":"bitmap",
-      "file":"sg:font/team_plants.png",
-      "ascent":8,
-      "height":9,
-      "chars":["\uD012"]
-    },
-    {
-      "type":"bitmap",
-      "file":"sg:font/team_zombies.png",
-      "ascent":8,
-      "height":9,
-      "chars":["\uD013"]
-    },
-    {
-      "type":"bitmap",
       "file":"sg:font/admin.png",
       "ascent":8,
       "height":9,
@@ -58,38 +44,10 @@
     },
     {
       "type":"bitmap",
-      "file":"sg:font/red.png",
-      "ascent":7,
-      "height":7,
-      "chars":["\uD004"]
-    },
-    {
-      "type":"bitmap",
-      "file":"sg:font/blue.png",
-      "ascent":7,
-      "height":7,
-      "chars":["\uD005"]
-    },
-    {
-      "type":"bitmap",
       "file":"sg:font/queue_background.png",
       "ascent":0,
       "height":52,
       "chars":["\uD006"]
-    },
-    {
-      "type":"bitmap",
-      "file":"sg:font/yellow.png",
-      "ascent":7,
-      "height":7,
-      "chars":["\uD007"]
-    },
-    {
-      "type":"bitmap",
-      "file":"sg:font/lime.png",
-      "ascent":7,
-      "height":7,
-      "chars":["\uD008"]
     },
     {
       "type":"bitmap",
@@ -244,34 +202,6 @@
       "ascent":9,
       "height":9,
       "chars":["\uF015"]
-    },
-    {
-      "type":"bitmap",
-      "file":"minecraft:ui/cactus_sprite.png",
-      "ascent":9,
-      "height":9,
-      "chars":["\uC000"]
-    },
-    {
-      "type":"bitmap",
-      "file":"minecraft:ui/chomper_sprite.png",
-      "ascent":9,
-      "height":9,
-      "chars":["\uC001"]
-    },
-    {
-      "type":"bitmap",
-      "file":"minecraft:ui/peashooter_sprite.png",
-      "ascent":9,
-      "height":9,
-      "chars":["\uC000"]
-    },
-    {
-      "type":"bitmap",
-      "file":"minecraft:ui/sunflower_sprite.png",
-      "ascent":9,
-      "height":9,
-      "chars":["\uC000"]
     }
   ]
 }
