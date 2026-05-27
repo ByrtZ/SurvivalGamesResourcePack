@@ -15,7 +15,7 @@
 				}
 			]
 	},
-	"music.game": {
+	"music.game_main": {
 		"sounds": [
 			{
 				"name": "music/game/game",
