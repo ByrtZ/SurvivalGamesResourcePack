@@ -14,5 +14,69 @@
 					"stream": true
 				}
 			]
+	},
+	"music.game": {
+		"sounds": [
+			{
+				"name": "music/game/game",
+				"stream": true
+			}
+		]
+	},
+	"music.game_intro": {
+		"sounds": [
+			{
+				"name": "music/game/game_intro",
+				"stream": true
+			}
+		]
+	},
+	"music.lobby": {
+		"sounds": [
+			{
+				"name": "music/lobby/lobby",
+				"stream": true
+			}
+		]
+	},
+	"music.pre_game.auburn_forest": {
+		"sounds": [
+			{
+				"name": "music/pre_game/auburn_forest",
+				"stream": true
+			}
+		]
+	},
+	"music.pre_game.roughworks": {
+		"sounds": [
+			{
+				"name": "music/pre_game/roughworks",
+				"stream": true
+			}
+		]
+	},
+	"music.pre_game.mistwoods": {
+		"sounds": [
+			{
+				"name": "music/pre_game/mistwoods",
+				"stream": true
+			}
+		]
+	},
+	"music.pre_game.highlands": {
+		"sounds": [
+			{
+				"name": "music/pre_game/highlands",
+				"stream": true
+			}
+		]
+	},
+	"music.pre_game.aelumia_citadel": {
+		"sounds": [
+			{
+				"name": "music/pre_game/aelumia_citadel",
+				"stream": true
+			}
+		]
 	}
 }
