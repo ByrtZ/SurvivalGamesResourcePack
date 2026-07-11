@@ -37,6 +37,13 @@
     },
     {
       "type":"bitmap",
+      "file":"sg:font/staff.png",
+      "ascent":8,
+      "height":9,
+      "chars":["\uD004"]
+    },
+    {
+      "type":"bitmap",
       "file":"sg:font/spectator.png",
       "ascent":7,
       "height":7,
